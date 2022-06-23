@@ -1,0 +1,23 @@
+1. Factory pattern
+There is an phone which we are building OS for it.
+Open source os - android
+Closed os - iOS
+Old os - Symbian
+others - windows
+
+Now i will create an interface OS with method specs.
+All android,ios,windows,symbian os classes implement it and adds business logic.
+Create a main method, create an object for required classes with reference to Interface OS.
+call the method specs, done.
+
+But here in the main method, we are exposing the logic to the client.
+
+Now i create a factory class, when i say open os it will gives android, 
+closed - ios etc.Even if there is addition of new classes, changes. 
+This factory class wont expose logic.
+
+Now check the code.
+
+Advantages:
+1. Factory allows it subclasses to create the sub classes to choose the type of object to create.
+2. It provides loose coupling.
